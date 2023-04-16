@@ -1,0 +1,138 @@
+/**
+colors:
+primary #66a80f
+
+blacks
+#0a1101
+
+greys
+#f4fce3
+*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Roboto';
+}
+
+html {
+    /* // This defines what 1rem is 
+    // 1rem = 10px, 10px/16px = 62.5%*/
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    color: #0a1101;
+}
+
+.search-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding: 2rem 4rem;
+}
+
+aside {
+    max-width: 30rem;
+    padding: 1rem 2rem
+}
+
+main {
+    min-height: 50rem;
+    border: 1px solid #f4fce3;
+    border-radius: 2px;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+a {
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+.menu--list {
+    list-style: none;
+}
+
+.results-table th,
+.results-table td {
+    font-size: 1.4rem;
+    padding: 1.2rem 2.4rem;
+}
+
+.results-table th {
+    font-weight: 700;
+}
+
+.results-table tbody tr:nth-child(2n) {
+    background-color: #f4fce3;
+}
+
+.results-table caption {
+    font-size: 1.6rem;
+}
+
+
+.spinner {
+    margin: 5rem auto;
+    text-align: center;
+}
+
+
+.spinner svg {
+    height: 6rem;
+    width: 6rem;
+    fill: #5c940d;
+    animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.search__field {
+    border-radius: 0.2rem;
+    padding: 0.4rem 0.8rem;
+    border: 0.1rem solid #b3d487;
+    font-size: 1.4rem;
+    min-width: 30rem;
+}
+
+.search__field:active, 
+.search__field:focus {
+    outline-color: #5c940d;
+}
+
+
+.search__button {
+    background-color: #0a1101;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.4rem;
+    border: none;
+}
+
+.search__button:hover {
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+    gap: 2.4rem;
+}

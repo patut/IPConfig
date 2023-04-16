@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="shortcut icon" type="image/png" href="/img/favicon.ico">
+        <script type="module" defer src="./js/controller.js"></script>
+        
+        <title>Locations | Finding Location by ip and City</title>
+    </head>
+    <body>
+        <div class="search-container">
+            <aside>
+                <h2>Искать</h2>
+                <nav class="menu">
+                    <ul class="menu--list">
+                        <li>
+                            <a href="#ip">По IP Адресу</a>
+                        </li>
+    
+                        <li>
+                            <a href="#city">По Городу</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+    
+            <main>
+                <header>
+                    <nav class="search-bar">
+                        <form class="search">
+                            <input type="search" name="search-bar-field" id="search-field" placeholder="" class="search__field" required />
+                            <input type="submit" value="Искать" class="search__button">
+                        </form>
+                    </nav>
+                </header>
+                <section class="results">
+                    
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
